@@ -13,15 +13,16 @@ export class CursosService {
     ];
   }
 
-  getCurso(id: number | undefined) {
+  getCurso(id: number) {
     let cursos = this.getCursos();
-    for (let i = 0; i < cursos.length; i++) {
-      let curso = cursos[i];
-      if (curso.id == id) {
-        return curso;
-      }
-    }
-    return null;
+    // for (let i = 0; i < cursos.length; i++) {
+    //   let curso = cursos[i];
+    //   if (curso.id == id) {
+    //     return curso;
+    //   }
+    // }
+
+    return cursos.find((curso) => curso.id === id);
   }
 
   constructor() {}
