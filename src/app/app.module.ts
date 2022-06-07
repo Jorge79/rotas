@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app.routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CursosModule } from './cursos/cursos.module';
+import { AlunosModule } from './alunos/alunos.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,13 @@ import { CursosModule } from './cursos/cursos.module';
     // CursoDetalheComponent,
     // CursoNaoEncontradoComponent,
   ],
-  imports: [BrowserModule, NgbModule, AppRoutingModule, CursosModule],
+  imports: [
+    BrowserModule,
+    NgbModule,
+    AppRoutingModule,
+    CursosModule,
+    AlunosModule,
+  ],
   // providers: [CursosService],
   bootstrap: [AppComponent],
 })
