@@ -1,1 +1,29 @@
-<p>login works!</p>
+<br />
+<div class="container">
+  <h5>Login</h5>
+  <div class="form-group">
+    <label for="usuario">Nome</label>
+    <input
+      [(ngModel)]="usuario.nome"
+      type="email"
+      class="form-control"
+      id="usuario"
+      placeholder="Digite o nome"
+    />
+    <br />
+    <div class="form-group">
+      <label for="senha">Senha</label>
+      <input
+        [(ngModel)]="usuario.senha"
+        type="password"
+        class="form-control"
+        id="senha"
+        placeholder="Digite a senha"
+      />
+    </div>
+    <br />
+    <button (click)="fazerLogin(usuario)" type="button" class="btn btn-dark">
+      Login
+    </button>
+  </div>
+</div>
